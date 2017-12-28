@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<script src="rock_paper_sciss.js"></script>
+<style>
+body {
+	font-family: Ariel, Verdana, sans-serif;
+	background-color: ghostwhite;
+}
+
+p {
+	color: saddlebrown;
+	padding: 10px;
+}
+
+#container {width:60%;}
+
+.pcolor {font-weight: bold;}
+
+.headcolor {
+	color: white;
+	background-color: grey;
+	padding: 10px;
+    width: 25%;
+}
+
+#mymsg {color: blue;}
+
+#myimage {float: right;}    
+    
+</style>
+	
+</head>
+
+<body>
+    
+    <h1>Rock Paper Scissors</h1>
+	<h3 class="headcolor">Ready? Lets play!</h3>
+	Please Type "Rock", "Paper" or "Scissors":<br>
+	<input type="text" name="users_option" id="users_option" size="30">
+	 
+       <input type="button" id="submit" onclick="promptMe()" value="submit">
+
+
+    <p id="msg"></p>
+    <p id="msg2"></p>
+</body>
+</html>
