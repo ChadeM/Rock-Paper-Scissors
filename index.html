@@ -1,22 +1,31 @@
 
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html>
 <head>
 	<title>Rock Paper Scissors</title>
-	<script src="rock_paper_sciss.js"></script>
+
+	
+
 <style>
 body {
 	font-family: Ariel, Verdana, sans-serif;
-	background-color: ghostwhite;
+	font-size: 24px;
+	 
 }
 
-p {
-	color: saddlebrown;
+h2 {
+	color: #404041;
 	padding: 10px;
+	text-align: center;
 }
 
-#container {width:60%;}
+ 
+
+#container {
+	 text-align: center;
+	 
+}
 
 .pcolor {font-weight: bold;}
 
@@ -25,27 +34,39 @@ p {
 	background-color: grey;
 	padding: 10px;
     width: 25%;
+
 }
 
 #mymsg {color: blue;}
 
-#myimage {float: right;}    
-    
+#myimage {float: right;}
+
 </style>
-	
+
 </head>
 
 <body>
-    
-    <h1>Rock Paper Scissors</h1>
-	<h3 class="headcolor">Ready? Lets play!</h3>
-	Please Type "Rock", "Paper" or "Scissors":<br>
-	<input type="text" name="users_option" id="users_option" size="30">
+ 
+<div id="container">
+
+
+ 
 	 
-       <input type="button" id="submit" onclick="promptMe()" value="submit">
+	<h2>Please Select "Rock", "Paper" or "Scissors":</h2><br>
+	<!--  <input type="text" name="users_option" id="users_option" size="30">-->
+ <div class="center">
+	<img class = "rock" src="imgs/rock.png" alt ="rock">
+	<img class = "paper" src="imgs/paper.png" alt ="paper">
+	<img class = "sciss" src="imgs/scissors.png" alt ="scissors">
+  </div>
+    <!--   <input type="button" id="submit" onclick="promptMe()" value="submit"> -->
 
 
-    <p id="msg"></p>
-    <p id="msg2"></p>
+     <p id="msg"></p>
+     <p id="msg2"></p>
+     <p id="msg3"></p>
+
+     	<script src="rock_paper_scissors.js"></script>
+     </div>
 </body>
 </html>
